@@ -1,0 +1,12 @@
+inFp = None
+inList, inStr = [], ""
+Num = 1  
+
+inFp = open("/Users/a573310/pythonprogramming/FileTest/python.txt", "r")
+
+inList = inFp.readlines()
+for inStr in inList:
+    print("%d: %s" % (Num, inStr), end="") 
+    Num += 1  
+
+inFp.close()
